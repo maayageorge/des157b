@@ -1,0 +1,341 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+/* custom fonts */
+@font-face {
+    font-family: 'Terminal Grotesque';
+    src: url('path/to/terminal-grotesque-webfont.otf') format('opentype');
+}
+
+
+/* page styling */
+body {
+    background: rgb(247,219,238);
+    background: linear-gradient(180deg, rgba(247,219,238,1) 0%, rgba(255,255,255,1) 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    transition: all 1s;
+    font-family: 'Terminal Grotesque', sans-serif;
+}
+
+body.switch {
+    background: rgb(198,192,196);
+    background: linear-gradient(180deg, rgba(198,192,196,1) 0%, rgba(255,255,255,1) 60%);
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 0.1em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+header h1 {
+    font-family: "Princess Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+
+/* typing animation for header h2 from: https://www.sitepoint.com/css-typewriter-effect/ */
+.typed-out{
+    font-size: 28px;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation: 
+        typing 2.5s steps(50, end) forwards, blinking 1s infinite;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: black; }
+}
+
+
+/* main styling */
+main {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    z-index: 0;
+}
+
+
+/* styling for decorative images/banner and grid configuration */
+#dollimgs {
+    position: relative;
+    width: 250px;
+    height: 480px;
+    margin: auto;
+    overflow: hidden;
+	place-items: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#dollimgs.switch {
+    transition: all 1s;
+}
+
+#stars{
+    position: relative;
+    width: 150px;
+    height: 135px;
+    margin: auto;
+    overflow: hidden;
+	place-items: center;
+    grid-area: 3 / 3 / 4 / 4;  
+}
+
+#stars.switch {
+    transition: all 1s;
+}
+
+#banner {
+    position: relative;
+    grid-area: 1 / 2 / 2 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner img {
+    border-radius: 10px;
+    width: 75%;
+    max-width: 100%; 
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#banner.switch {
+    transition: all 2s;
+}
+
+#banner2{
+    position: absolute;
+    visibility: hidden;
+    z-index: 1; /* grey bg on top */
+}
+
+#banner1 {
+    position: absolute;
+    visibility: visible;
+    z-index: 2; /* pink bg on top */
+}
+
+#banner2.switch{
+    visibility: visible;
+}
+
+#banner1.switch{
+    visibility: hidden;
+}
+
+#projects {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#toolkit {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#research {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#development {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#capstone{
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+#switch {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+
+/* sections styling */
+main section {
+    background-color: white;
+    border: 5px #FFC1EA solid;
+    border-radius: 10px;
+    margin: 0 0.25em;
+    padding: 1em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main section.switch {
+    border: 5px #C6C0C4 solid;
+}
+
+main section h3 {
+    font-family: "Princess Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    padding-left: 0.4em;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+section a {
+    line-height: 0.6em;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    font-size: 18px;
+}
+
+section a:hover {
+    color: #FFC1EA;
+}
+
+section.switch a:hover {
+    color: #C6C0C4;
+}
+
+
+/* doll & star styling */
+#greydoll {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1; /* grey doll on top */
+}
+
+#pinkdoll {
+    position: absolute;
+    visibility: visible;
+    z-index: 2; /* pink doll on top */
+}
+
+#greydoll.switch {
+    visibility: visible;
+}
+
+#pinkdoll.switch {
+    visibility: hidden;
+}
+
+#greystar{
+    position: absolute;
+    visibility: hidden;
+    z-index: 1; /* grey star on top */
+}
+
+#pinkstar {
+    position: absolute;
+    visibility: visible;
+    z-index: 2; /* pink star on top */
+}
+
+#greystar.switch{
+    visibility: visible;
+}
+
+#pinkstar.switch{
+    visibility: hidden;
+}
+
+
+/* button styling */
+#slidingbutton {
+    position: absolute;
+    top: 750px;
+    left: 20px;
+    width: 250px;
+    height: 80px; 
+    background-color: #FFC1EA;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#slidingbutton.switch {
+    background-color: #C6C0C4;
+    cursor: pointer;
+}
+
+#slider {
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#slider.switch {
+    transform: translateX(110px);
+}
+
+button {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align:right;
+    font-size: 1em;
+    margin-top: 120px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFC1EA;
+}
+
+footer.switch a {
+    text-decoration: none;
+    color: #C6C0C4;
+}
