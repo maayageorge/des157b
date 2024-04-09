@@ -83,7 +83,7 @@ main {
     grid-template-rows: repeat(5, 1fr);
     grid-template-rows: 40% 40%;
     grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     z-index: 0;
 }
 
@@ -324,8 +324,10 @@ button:hover {
     cursor: pointer;
 }
 
+
+/* footer styling */
 footer {
-    text-align:right;
+    text-align: right;
     font-size: 1em;
     margin-top: 120px;
 }
