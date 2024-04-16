@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini STUDIO 1 - Blockbuster Video!</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <video id="myVideo" poster="images/poster.jpg" muted loop autoplay playsinline> 
+
+        <source src="media/studio1-vid.webm" type="video/webm">
+        <source src="media/studio1-vid.mp4" type="video/mp4">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="media/studio1-vid.mp4">link to the video</a> instead.</p>
+
+    </video>
+
+    <i class="fa-solid fa-bugs"></i>
+
+    <section id="lyrics">
+        <p id="line1" class="hidden">i am a moth</p>
+        <p id="line2" class="hidden">who just wants to share your light</p>
+        <p id="line3" class="hidden">i'm just an insect</p>
+        <p id="line4" class="hidden">trying to get out of the night</p>
+        <p id="line5" class="hidden">i only stick with you</p>
+        <p id="line6" class="hidden">because there are no others</p>
+    </section>
+
+</body>
+
+<script>
+
+    (function() {
+    'use strict';
+    console.log('reading');
+
+    const myVideo = document.querySelector('#myVideo');
+    const loading = document.querySelector('.fa-bugs');
+
+    myVideo.addEventListener('playing', function(){
+        loading.style.display = 'none';
+    })
+    })()
+
+</script>
+
+</html>
