@@ -24,17 +24,17 @@ body{
     transform: translate(-50%,-50%);
 }
 
-.fa-bugs {
+.fa-star {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 40px;
     color: white;
     transform: translate(-50%, -50%);
-    animation: bugs 2s infinite alternate ease-in-out;
+    animation: star 2s infinite alternate ease-in-out;
 }
 
-@keyframes bugs {
+@keyframes star {
     0% {
         opacity: .5;
         transform: scale(1);
@@ -51,31 +51,27 @@ body{
 #lyrics p {
     position: absolute;
     width: 100%;
-    font-size: 1em;
-    transition: all .5s;
+    font-size: 30px;
+    transition: all .4s;
 }
 
-#line1, #line2, #line3, #line4, #line5, #line6 {
+#line1, #line2, #line3, #line4 {
     font-family: "Jersey 10 Charted", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
-    bottom: 10%;
-    left: 5%;
 }
 
 #line1{
     position: absolute;
-    font-size: 30px;
     top: 10%;
     left: 5%;
 }
 
 #line2{
     position: absolute;
-    font-size: 30px;
     bottom: 10%;
-    left: 80%;
+    left: 70%;
 }
 
 #line3{
@@ -87,23 +83,21 @@ body{
 
 #line4{
     position: absolute;
-    font-size: 30px;
     bottom: 10%;
-    left: 80%;
+    left: 70%;
 }
 
-#line5{
+.fa-expand {
     position: absolute;
-    font-size: 30px;
-    top: 10%;
-    left: 5%;
-}
-
-#line6{
-    position: absolute;
-    font-size: 30px;
-    bottom: 10%;
-    left: 80%;
+    top: 5%;
+    right: 3%;
+    font-size: 42px;
+    color: white;
+  }
+  
+.fa-expand:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .hidden {
@@ -113,3 +107,4 @@ body{
 .showing {
     opacity: 1;
 }
+
