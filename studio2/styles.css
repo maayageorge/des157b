@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    display: flex; 
+}
+
+main{
+    position: absolute; 
+    background-color: black;
+    color: white;
+    font-family: 'Apple Garamond', sans-serif;
+    width: 45%; 
+    height: 100%; 
+    padding: 25px; 
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+button{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px; 
+    border-radius: 50%; 
+    border-style: none;
+    margin: 25px 50px 25px 50px;  
+    width: 180px; 
+    height: 180px;
+    background-color: white;
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #FF00B8; 
+    color: white;
+}
