@@ -5,32 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
     <title>MiniSTUDIO 2 - Check Yourself</title>
 
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer=""></script>
 
     <!--fonts-->
-    <link href="https://fonts.cdnfonts.com/css/apple-garamond" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+20&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <h1 id="title">My Top Songs of the Week</h1>
+    <h1 id="dates">May 15, 2024 - May 21, 2024</h1>
 
     <main>
-        <h1>Maaya’s Top Songs of the Month</h1>
-        <h2>2024</h2>
-
-        <div id="months">
-            <button id="january">january</button>
-            <button id="february">february</button>
-            <button id="march">march</button>
-            <button id="april">april</button>
-        </div>
+        <section>
+            <img src="" alt="cover" id="cover">
+            <div id="song">
+                <h2></h2>
+            </div>
+        </section>
     </main>
 
-    <div>
-        <img src="none" alt="cover" id="songCover">
-    </div>
-    
+    <nav>
+        <ul>
+            <li><button id="Monday">Monday</button></li>
+            <li><button id="Tuesday">Tuesday</button></li>
+            <li><button id="Wednesday">Wednesday</button></li>
+            <li><button id="Thursday">Thursday</button></li>
+            <li><button id="Friday">Friday</button></li>
+            <li><button id="Saturday">Saturday</button></li>
+            <li><button id="Sunday">Sunday</button></li>
+        </ul>
+    </nav>    
+
+    <script src="script.js" defer></script>
+
 </body>
 </html>
