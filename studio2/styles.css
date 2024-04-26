@@ -1,5 +1,5 @@
 body {
-    font-family: "Jersey 20", sans-serif;
+    font-family: "VT323", monospace;
     background-color: black;
     color: white;
     height: 100vh;
@@ -8,25 +8,20 @@ body {
     overflow: hidden;
 }
 
-header {
-    display: flex;
-    width: 700px;
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #title{
-    font-size: 42px;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 50px;
+    border:#FF008A 5px dotted;
+    text-align: center;
 }
 
 #dates{
-    font-size: 28px;
-}
-
-#title, #dates{
+    font-size: 24px;
     text-align: center;
 }
 
@@ -42,7 +37,6 @@ main section {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 img {
@@ -54,8 +48,13 @@ img {
     border-radius: 10px;
 }
 
+img:hover{
+    border: #FF008A 6px solid;
+    scale: 1.001;
+}
+
 nav {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -71,12 +70,13 @@ ul {
 li {
     list-style-type: none;
     text-align: center;
+    font-size: 18px;
 }
 
 button{
     background-color: white;
     color: black;
-    width: 100px;
+    width: 90px;
     margin: 5px;
     padding: 15px;
     border: 0;
@@ -86,4 +86,13 @@ button{
 button:hover{
     background-color: #FF008A;
     color: white;
+    cursor: pointer;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible; 
 }

@@ -2,31 +2,38 @@
     "Top Songs of the Week": {
       "Monday": {
         "song": "So What If I’m A Freak",
-        "artist": "Snow Strippers"
+        "artist": "Snow Strippers",
+        "link": "https://www.youtube.com/watch?v=TK15iln5LSU"
       },
       "Tuesday": {
         "song": "U DON'T KNOW ME LIKE THAT",
-        "artist": "Quadeca"
+        "artist": "Quadeca",
+        "link": "https://www.youtube.com/watch?v=GbzJsOW8ypA"
       },
       "Wednesday": {
         "song": "a wasp appears",
-        "artist": "They Are Gutting A Body of Water"
+        "artist": "They Are Gutting A Body of Water",
+        "link": "https://www.youtube.com/watch?v=zjf8SHH3PMQ"
       },
       "Thursday": {
-        "song": "blackbirds",
-        "artist": "2hollis"
+        "song": "Girl Party",
+        "artist": "MGNA Crrrta",
+        "link": "https://www.youtube.com/watch?v=_8ke_ttbaAU"
       },
       "Friday": {
-        "song": "Immunity",
-        "artist": "Alex G"
+        "song": "Everywhere",
+        "artist": "Cranes",
+        "link": "https://www.youtube.com/watch?v=pQ4bRTqSh0o"
       },
       "Saturday": {
         "song": "buffalo 66",
-        "artist": "aldn"
+        "artist": "aldn",
+        "link": "https://soundcloud.com/hereisalden/buffalo-66"
       },
       "Sunday": {
         "song": "TL;DR",
-        "artist": "Bladee, Ecco2k, Thaiboy Digital"
+        "artist": "Bladee, Ecco2k, Thaiboy Digital",
+        "link": "https://www.youtube.com/watch?v=ViFC51oDp_w"
       }
     }
   }
