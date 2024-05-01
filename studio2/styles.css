@@ -50,7 +50,7 @@ img {
 
 img:hover{
     border: #FF008A 6px solid;
-    scale: 1.001;
+    transform: scale(1.001);
 }
 
 nav {
