@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+}
+
+#map { 
+    height: 350px; 
+    border-radius: 10px;
+}
