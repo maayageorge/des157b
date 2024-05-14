@@ -1,0 +1,22 @@
+body{
+    background-color: white;
+    color: black;
+    max-width: 80%;
+    font-family: "Outfit", sans-serif;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    z-index: 10;
+}
+
+#map{
+    height: 800px;
+    width: 800px;
+}
