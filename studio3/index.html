@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ministudio 3d - Library Liberty</title>
 
+    <link href="styles.css" rel="stylesheet">
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- libraries -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -22,23 +28,31 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class ="title" data-aos="fade-down">
-        <h1>Davis Food Map</h1>
-        <h2>Explore some of the best spots in town and my recommendations from each!</h2>
+    <div class="title">
+        <div data-aos="fade-down" data-aos-duration="1200">
+            <h1>༻ Davis Food Map ༺</h1>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1200">
+            <h2>Explore some of the best spots in town and my recommendations from each!</h2>
+        </div>
     </div>
 
     <div class="maparea">
         <div id="map"></div>
 
         <main id="container">
-            <h2>Click on the pins to learn more!</h2>
+            <h2>Click on the pins to learn more</h2>
         </main>
     </div>
+
+    <footer>
+        <p>Made with <a href = "https://leafletjs.com/">Leaflet</a> and <a href = "https://michalsnik.github.io/aos/">Animate on Scroll</a> Libraries</p>
+    </footer>
 
 </body>
 </html>

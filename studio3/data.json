@@ -1,0 +1,38 @@
+{
+    "restaurant1": {
+      "name": "Jusco",
+      "item": "Summer Roll",
+      "location": "228 G St, Davis, CA 95616",
+      "coordinates": "38.544580, -121.738980",
+      "img": "images/jusco.jpg"
+    },
+    "restaurant2": {
+      "name": "Mandro Teahouse",
+      "item": "Mango Bingsoo",
+      "location": "1260 Lake Blvd, Davis, CA 95616",
+      "coordinates": "38.5536352, -121.787547",
+      "img": "images/mandro.jpg"
+    },
+    "restaurant3": {
+      "name": "Taqueria Guadalajara",
+      "item": "Crispy Shrimp Tacos",
+      "location": "640 W Covell Blvd, Davis, CA 95616",
+      "coordinates": "38.559920, -121.757210",
+      "img": "images/taqueria.jpg"
+    },
+    "restaurant4": {
+      "name": "Thai Canteen",
+      "item": "Mango Sticky Rice",
+      "location": "117 E St, Davis, CA 95616",
+      "coordinates": "38.542171, -121.740952",
+      "img": "images/thai.jpg"
+    },
+    "restaurant5": {
+      "name": "Upper Crust Baking",
+      "item": "Fruit Tart",
+      "location": "634 G St, Davis, CA 95616",
+      "coordinates": "38.5496177, -121.7404583",
+      "img": "images/uppercrust.jpg"
+    }
+  }
+  
