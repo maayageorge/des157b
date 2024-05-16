@@ -29,7 +29,7 @@
             function displayPopup(markerinfo) {
                 var popupContent = `
                     <div id="item" data-aos="fade-down" data-aos-duration="1200">
-                        <img src="${markerinfo.img}" class="titleimg">
+                        <img src="${markerinfo.img}">
                         <div class="info">
                             <h3>${markerinfo.name}</h3>
                             <p><strong>Dish:</strong> ${markerinfo.item}</p>
