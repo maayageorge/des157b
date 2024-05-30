@@ -203,6 +203,10 @@ ul {
     background: none;
     border: none;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
+}
+
+#construction {
+    text-align: center;
 }

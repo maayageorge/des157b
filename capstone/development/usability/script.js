@@ -27,7 +27,7 @@ AOS.init();
         let html = '';
         const items = Object.keys(data['Fashion of the future']);
         items.forEach(function(item){
-            const imageName = item.toLowerCase().replace(/ /g, '');
+            const imageName = item.toLowerCase();
             html += `<li><button id="${item}"><img src="images/${imageName}.jpg" alt="${item}"></button></li>`;
         });
         return html;
