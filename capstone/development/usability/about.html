@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Pie Charts with Descriptions</title>
 
     <!--- google fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +20,54 @@
     <!--- stylesheet and js --->
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
-</head>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .chart-block {
+            text-align: center;
+            margin: 10px;
+            flex: 1 1 250px;
+        }
+
+        .chart-container {
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+        }
+
+        .description {
+            max-width: 200px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .info-top {
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 40px;
+        }
+
+        .info-bottom {
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 40px;
+        }
+
+
+        .info-top h2 {
+            font-family: "Gugi", sans-serif;
+        }
+    </style>
+</head>
 <body>
 
     <header>
@@ -35,7 +80,107 @@
         </nav>
     </header>
 
-    <h1 id="construction">Under Construction</h1>
-</body>
+    <div class="info-top">
+        <h2>Why are biotextiles the future?</h2>
+        <p>As our planet faces the severe impacts of pollution and climate change, the need for sustainable and eco-friendly solutions has never been more critical. Biotextiles, made from natural and renewable sources, offer a way to reduce the environmental damage caused by traditional textile production. Currently, the fashion industry is a significant source of environmental harm, causing: </p>
+    </div>
 
-</html>
+    <div class="container">
+        <div class="chart-block">
+            <div class="chart-container">
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="description">
+                <p>10% of global carbon emissions</p>
+            </div>
+        </div>
+        <div class="chart-block">
+            <div class="chart-container">
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="description">
+                <p>20% of global waste water</p>
+            </div>
+        </div>
+        <div class="chart-block">
+            <div class="chart-container">
+                <canvas id="chart3"></canvas>
+            </div>
+            <div class="description">
+                <p>35% of marine microplastic pollution</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-bottom">
+        <p>These alarming figures highlight the need for change. Traditional textiles not only have large carbon footprints but also remain in the environment for centuries, causing soil contamination, water pollution, and harm to marine life. In contrast, biotextiles can be composted or biodegraded at the end of their life cycle, greatly reducing waste and pollution. Producing biopolymers from biomass instead of fossil fuels could decrease greenhouse gas emissions by 16 million tons of CO2-equivalent per year, amounting to a 25% reduction across the industry. Biotextiles have the potential to significantly lessen the environmental impact of the fashion industry and lead us towards a more sustainable future.</p>
+    </div>
+    
+    <script>
+        const data1 = {
+            datasets: [{
+                data: [10, 100],
+                backgroundColor: [
+                    'rgb(105,105,105)',
+                    'rgb(220,220,220)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+    
+        const data2 = {
+            datasets: [{
+                data: [20, 100],
+                backgroundColor: [
+                    'rgb(105,105,105)',
+                    'rgb(220,220,220)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+    
+        const data3 = {
+            datasets: [{
+                data: [35, 100],
+                backgroundColor: [
+                    'rgb(105,105,105)',
+                    'rgb(220,220,220)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+    
+        const config1 = {
+            type: 'doughnut',
+            data: data1,
+        };
+    
+        const config2 = {
+            type: 'doughnut',
+            data: data2,
+        };
+    
+        const config3 = {
+            type: 'doughnut',
+            data: data3,
+        };
+    
+        const chart1 = new Chart(
+            document.getElementById('chart1'),
+            config1
+        );
+    
+        const chart2 = new Chart(
+            document.getElementById('chart2'),
+            config2
+        );
+    
+        const chart3 = new Chart(
+            document.getElementById('chart3'),
+            config3
+        );
+    </script>
+    
+    </body>
+    </html>
+
