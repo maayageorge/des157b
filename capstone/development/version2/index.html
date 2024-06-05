@@ -23,11 +23,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Lightbox2 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    
-    <!-- Lightbox2 JS and dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
+    <link href="path/to/lightbox.css" rel="stylesheet" />
 
     <!--- stylesheet and js --->
     <link href="styles.css" rel="stylesheet">
@@ -64,7 +60,7 @@
 
     <div class="showcase">
         <div id="info" class="hidden" data-aos="fade-down" data-aos-duration="3000">
-            <img src="#" alt="cover" id="cover">
+            <img src="#" alt="cover" id="cover" data-lightbox="cover">
             <div id="item" class="info-content">
                 <h2></h2>
                 <br>
@@ -86,6 +82,9 @@
 
     <footer>
     </footer>
+
+    <!-- Lightbox2 JS and dependencies -->
+    <script src="path/to/lightbox.js"></script>
     
 </body>
 
