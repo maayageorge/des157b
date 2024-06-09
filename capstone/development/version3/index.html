@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Version 1</title>
+
+    <!--- google fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--- font awesome --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--- aos library cdn sources -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Lightbox2 CSS -->
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+
+    <!--- stylesheet and js --->
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div id="text">
+            <h1>Fashion of the Future</h1>
+            <p>...is a project aiming to showcase the potential of biotextile use in fashion. As the world increasingly seeks sustainable and eco-friendly alternatives to combat pollution and the harmful effects of fast fashion, biotextiles have emerged as a promising solution. By integrating biotextiles, which are derived from natural and renewable sources, the 6 pieces highlighted serve to reduce negative environmental impacts and open the doors for a more sustainable future for the fashion industry.</p>
+        </div> 
+    </div>
+
+    <div class="scroll">
+        <div>scroll down to explore!</div>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <div class="about" class="hidden" data-aos="fade-up" data-aos-duration="3000">
+        <div class="info-top">
+            <h2>Why are biotextiles the future?</h2>
+            <p>As our planet faces the severe impacts of pollution and climate change, the need for sustainable and eco-friendly solutions has never been more critical. Biotextiles, made from natural and renewable sources, offer a way to reduce the environmental damage caused by traditional textile production. Currently, the fashion industry is a significant source of environmental harm, causing: </p>
+        </div>
+    
+        <div class="container">
+            <div class="chart-block">
+                <div class="chart-container"><canvas id="chart1"></canvas></div>
+                <div class="description" id="desc1"><p>10% of global carbon emissions</p></div>
+            </div>
+            <div class="chart-block">
+                <div class="chart-container"><canvas id="chart2"></canvas></div>
+                <div class="description" id="desc2"><p>20% of global waste water</p></div>
+            </div>
+            <div class="chart-block">
+                <div class="chart-container"><canvas id="chart3"></canvas></div>
+                <div class="description" id="desc3"><p>35% of marine microplastic pollution</p></div>
+            </div>
+        </div>
+    
+        <div class="info-bottom">
+            <p>These alarming figures highlight the need for change. Traditional textiles not only have large carbon footprints but also remain in the environment for centuries, causing soil contamination, water pollution, and harm to marine life. In contrast, biotextiles can be composted or biodegraded at the end of their life cycle, greatly reducing waste and pollution. Producing biopolymers from biomass instead of fossil fuels could decrease greenhouse gas emissions by 16 million tons of CO2-equivalent per year, amounting to a 25% reduction across the industry. Biotextiles have the potential to significantly lessen the environmental impact of the fashion industry and lead us towards a more sustainable future.</p>
+        </div>
+    </div>
+
+    <div class="scroll" data-aos="fade-up" data-aos-duration="3000">
+        <div>scroll down to explore!</div>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <div class="showcase">
+        <div id="info" class="hidden" data-aos="fade-up" data-aos-duration="3000">
+            <a href="#" id="expand-image"><img src="#" alt="cover" id="cover"></a>
+            <div id="item">
+                <h2></h2>
+                <br>
+                <p></p>
+            </div>
+        </div>
+
+        <nav class="bottom-nav" data-aos="fade-up" data-aos-duration="3000">
+            <ul>
+                <li><button id="Algikicks"><img src="images/navimages/algikicks.png" alt="Algikicks"></button></li>
+                <li><button id="Sonnet 155"><img src="images/navimages/sonnet155.png" alt="Sonnet 155"></button></li>
+                <li><button id="Stella McCartney Jumpsuit"><img src="images/navimages/stellamccartneyjumpsuit.png" alt="Stella McCartney Jumpsuit"></button></li>
+                <li><button id="Shellmet"><img src="images/navimages/shellmet.png" alt="Shellmet"></button></li>
+                <li><button id="Jelly Clothing"><img src="images/navimages/jellyclothing.png" alt="Jelly Clothing"></button></li>
+                <li><button id="The Soil Project"><img src="images/navimages/thesoilproject.png" alt="The Soil Project"></button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <p>Made using <a href="https://michalsnik.github.io/aos/" target="_blank">Animate on Scroll</a>, <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox2</a>, and <a href="https://www.chartjs.org/" target="_blank">Chart.js</a></p>
+    </footer>
+
+    <!-- lightbox2 JS -->
+    <script src="path/to/lightbox.js"></script>
+    
+</body>
+
+</html>
