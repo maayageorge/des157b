@@ -48,18 +48,21 @@ AOS.init();
         });
     }
 
-    function updateInterface(update, jsonData) {
-        console.log(jsonData);
-        const { title, description } = jsonData['Fashion of the future'][update];
+    function updateInterface(item, data) {
+        const { image, title, description } = data['Fashion of the future'][item];
     
-        const info = document.getElementById('info');
-        const img = info.querySelector('#info img');
-        const item = info.querySelector('#item');
+        const info = document.querySelector('#info');
+        const img = info.querySelector('#cover');
+        const content = info.querySelector('#item');
     
-        img.src = `images/${update}.jpeg`;
-        img.alt = `${update} cover`;
+        img.src = image;
+        img.alt = `${item} cover`;
     
-        item.innerHTML = `<h2>${title}</h2><p>${description}</p>`;
+        content.querySelector('h2').textContent = title;
+        content.querySelector('p').textContent = description;
+    
+        info.classList.remove('hidden');
+        info.classList.add('visible');
     }
 
     getData();
