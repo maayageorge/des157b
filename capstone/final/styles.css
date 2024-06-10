@@ -21,7 +21,6 @@ body {
     padding-left: 150px;
     padding-right: 150px;
     background-color: black;
-    border-style: ridge darkgrey 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 8px darkgrey;
     margin-left: 150px;
@@ -187,7 +186,6 @@ body {
 button {
     background-color: black;
     color: white;
-    border-style: ridge darkgrey 5px;
     border-radius: 20px;
     padding: 20px;
     cursor: pointer;
