@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 40px;
+    font-family: "Nunito", sans-serif;
+}
+
+/* top section */
+
+.hero {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: black;
+    border-style: ridge darkgrey 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px darkgrey;
+    margin-left: 150px;
+    margin-right: 90px;
+    margin-bottom: 100px;
+}
+
+#text h1 {
+    font-family: "Gugi", sans-serif;
+    font-size: 38px;
+    color: white;
+}
+
+#text p {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 18px;
+    color: white;
+    line-height: 1.4em;
+}
+
+/* scroll */
+
+.scroll {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    font-size: 40px;
+    color: black;
+    margin-top: 40px;
+}
+
+/* middle section */
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.info-top, .info-bottom {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.info-top h2 {
+    font-family: "Gugi", sans-serif;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.chart-block {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 250px;
+}
+
+.chart-container {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.description {
+    max-width: 200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* bottom section */
+
+.showcase {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px 0;
+    text-align: center; 
+}
+
+#info {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    max-width: 80%; 
+}
+
+#info img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-right: 50px;
+    border-radius: 20px; 
+    border: solid lightgray 8px;
+    flex: 0 0 auto; 
+    box-shadow: 5px 5px 8px darkgrey;
+}
+
+#info img:hover{
+    border: double lightgray 10px;
+}
+
+#info h2, #info p {
+    margin: 0;
+    text-align: left;
+}
+
+#item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+}
+
+#item h2 {
+    font-family: "Gugi", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#item p {
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.bottom-nav {
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.bottom-nav img {
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-style: ridge darkgrey 5px;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 5px 5px 8px darkgrey;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+footer p {
+    text-align: center;
+    font-family: "Gugi", sans-serif;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: blue;
+}

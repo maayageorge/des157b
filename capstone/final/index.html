@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Version 3</title>
+    <title>Capstone Project</title>
 
     <!--- google fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,20 +22,29 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- lightbox2 CSS -->
-    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--- fancybox css -->
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
     <!--- stylesheet and js --->
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 
+     <!--- chart.js library cdn source--->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!--- fancybox js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 
 <body>
 
     <div class="hero">
-        <div id="text">
+        <div id="text" data-aos="fade-left" data-aos-duration="2000">
             <h1>Fashion of the Future</h1>
             <p>...is a project aiming to showcase the potential of biotextile use in fashion. As the world increasingly seeks sustainable and eco-friendly alternatives to combat pollution and the harmful effects of fast fashion, biotextiles have emerged as a promising solution. By integrating biotextiles, which are derived from natural and renewable sources, the 6 pieces highlighted serve to reduce negative environmental impacts and open the doors for a more sustainable future for the fashion industry.</p>
         </div> 
@@ -46,7 +55,7 @@
         <i class="fa-solid fa-chevron-down"></i>
     </div>
 
-    <div class="about" class="hidden" data-aos="fade-up" data-aos-duration="3000">
+    <div class="about" class="hidden" data-aos="fade-up" data-aos-duration="2000">
         <div class="info-top">
             <h2>Why are biotextiles the future?</h2>
             <p>As our planet faces the severe impacts of pollution and climate change, the need for sustainable and eco-friendly solutions has never been more critical. Biotextiles, made from natural and renewable sources, offer a way to reduce the environmental damage caused by traditional textile production. Currently, the fashion industry is a significant source of environmental harm, causing: </p>
@@ -68,17 +77,17 @@
         </div>
     
         <div class="info-bottom">
-            <p>These alarming figures highlight the need for change. Traditional textiles not only have large carbon footprints but also remain in the environment for centuries, causing soil contamination, water pollution, and harm to marine life. In contrast, biotextiles can be composted or biodegraded at the end of their life cycle, greatly reducing waste and pollution. Producing biopolymers from biomass instead of fossil fuels could decrease greenhouse gas emissions by 16 million tons of CO2-equivalent per year, amounting to a 25% reduction across the industry. Biotextiles have the potential to significantly lessen the environmental impact of the fashion industry and lead us towards a more sustainable future.</p>
+            <p>These alarming figures highlight the need for change. Unlike traditional textiles, biotextiles can be composted or biodegraded at the end of their life cycle, greatly reducing waste and pollution. Their use could decrease greenhouse gas emissions by 16 million tons of CO2-equivalent per year, amounting to a 25% reduction across the industry. Biotextiles have the potential to significantly lessen the environmental impact of the fashion industry and lead us towards a more sustainable future.</p>
         </div>
     </div>
 
-    <div class="scroll" data-aos="fade-up" data-aos-duration="3000">
+    <div class="scroll" data-aos="fade-up" data-aos-duration="2000">
         <div>scroll down to explore!</div>
         <i class="fa-solid fa-chevron-down"></i>
     </div>
 
     <div class="showcase">
-        <div id="info" class="hidden" data-aos="fade-up" data-aos-duration="3000">
+        <div id="info" class="hidden" data-aos="fade-up" data-aos-duration="2000">
             <a href="#" id="expand-image"><img src="#" alt="cover" id="cover"></a>
             <div id="item">
                 <h2></h2>
@@ -87,7 +96,7 @@
             </div>
         </div>
 
-        <nav class="bottom-nav" data-aos="fade-up" data-aos-duration="3000">
+        <nav class="bottom-nav" data-aos="fade-up" data-aos-duration="2000">
             <ul>
                 <li><button id="Algikicks"><img src="images/navimages/algikicks.png" alt="Algikicks"></button></li>
                 <li><button id="Sonnet 155"><img src="images/navimages/sonnet155.png" alt="Sonnet 155"></button></li>
@@ -100,12 +109,8 @@
     </div>
 
     <footer>
-        <p>Made using <a href="https://michalsnik.github.io/aos/" target="_blank">Animate on Scroll</a>, <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox2</a>, and <a href="https://www.chartjs.org/" target="_blank">Chart.js</a></p>
+        <p>Made using <a href="https://michalsnik.github.io/aos/" target="_blank">Animate on Scroll</a>, <a href="https://fancyapps.com/fancybox/" target="_blank">Fancybox</a>, and <a href="https://www.chartjs.org/" target="_blank">Chart.js</a></p>
     </footer>
-
-    <!-- lightbox2 JS -->
-    <script src="path/to/lightbox.js"></script>
     
 </body>
-
 </html>

@@ -1,0 +1,34 @@
+{
+  "Fashion of the future": {
+    "Algikicks": {
+      "image": "images/algikicks-img.jpeg",
+      "title": "Algikicks",
+      "description": "Algikicks were created by a start-up called AlgiKnit, co-founded by FIT and Pratt Institute graduates Aleks Gosiewski, Tessa Callaghan, and Aaron Nesser. These sneakers, made from a kelp-based material, are far better for the environment than conventional sneakers. They feature a bioresin outsole and are constructed from yarn made out of alginate, which is a biopolymer derived from seaweed. The materials are compostable and will degrade after the shoes have reached the end of their lifespan. That way, they won’t be wasted in a landfill and pollute our already polluted planet."
+    },
+    "Sonnet 155": {
+      "image": "images/sonnet155-img.jpeg",
+      "title": "Sonnet 155",
+      "description": "Sonnet 155 is a fully biodegradable, translucent handbag made out of cellulose fibers that are sourced from textile factories in addition to pectin derived from fruit skins. It was invented by Berlin-based design students Lobke Beckfeld and Johanna Hehemeyer-Cürten, who aimed to design an alternative to the ordinary paper bag. It can also serve as a stylish, minimalistic handbag. Once worn down, it can be dissolved in warm water and recast to create a brand new bag. The pectin can also be reused as plant fertilizer."
+    },
+    "Stella McCartney Jumpsuit": {
+      "image": "images/stella-img.jpeg",
+      "title": "Stella McCartney Jumpsuit",
+      "description": "In collaboration with Radiant Matter, a raw materials manufacturing company, luxury designer Stella McCartney released a bodysuit adorned with hundreds of sequins made out of bioplastics. Bioplastics use tree cellulose instead of harmful materials like PVC and Mylar which is what sequins are typically made of. While plastic sequins can be toxic for people's health and are damaging to the environment, biosequins are a safe and sustainable alternative."
+    },
+    "Shellmet": {
+      "image": "images/shellmet-img.jpeg",
+      "title": "Shellmet",
+      "description": "The Shellmet is a helmet made out of wasted scallop shells, which are one of the most discarded types of marine waste in Japan and a major contributor to soil contamination. Recycling these shells provides a sustainable method for reducing pollution as well as reliable protection for fishermen and villagers. These helmets reduce CO2 emissions by up to 36% compared to plastic helmets and have 133% more strength due to their ribbed structure from the shells. The Shellmet was developed by Koshi Chemical Industry Co. with Professor Hiroshi Uyama of Osaka University."
+    },
+    "Jelly Clothing": {
+      "image": "images/jelly-img.jpeg",
+      "title": "Jelly Clothing",
+      "description": "Icelandic designer Valdís Steinarsdóttir makes translucent jelly clothing out of gelatin that is derived from red algae. Instead of being cut from a pattern, the garments are cast into moulds. Once no longer needed, the pieces can be melted down and remade into new clothing or dissolved in hot water instead of being discarded in a landfill. They are naturally dyed with sugar alcohols and maintain a plastic-like appearance despite being made from 100% natural materials."
+    },
+    "The Soil Project": {
+      "image": "images/soil-img.jpeg",
+      "title": "The Soil Project",
+      "description": "Designed by art student Yuhan Bai from the Royal College of Art in England, the Soil Project is a clothing collection that features vintage pieces dyed with soil and garments made from a soil-based leather alternative. Bai embarked on this project after learning about the soil damage that the fashion industry's overreliance on cotton causes. She made the leather-like material by mixing gelatin, agar, starch, glycerin and gluten with water and combining the mixture with soil. The material mimics animal leather and has the flexibility of silicone."
+    }
+  }
+}

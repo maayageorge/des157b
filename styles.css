@@ -25,7 +25,7 @@ body {
     background-size: cover;
     color: black;
     transition: all 1s;
-    font-family: 'Terminal Grotesque', sans-serif;
+    font-family: 'Terminal Grotesque', Helvetica, sans-serif;
 }
 
 body.switch {
